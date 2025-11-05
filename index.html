@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title> Questly </title>
+</head>
+<body>
+    <!-- to create container to store 2 container-->
+    <div class = "container">
+        <!-- to create container_1 for taskbar -->
+        <div class = "container_1">
+            <!-- to create taskbar -->
+            <div class = "taskbar">
+                <!-- to create space for logo -->
+                <div class = "logo">
+                    <img class = "light-bulb" src = "Questly_Icons/light-bulb.png">
+                </div>
+                <div class = "questly">
+                    <p> Questly </p>
+                </div>
+                <!-- to create a question generator box -->
+                <div class = "question_generator_box">
+                    <div class = "question_generator_circle">
+                        <img class = "book" src = "Questly_Icons/book.png">
+                    </div>
+                    <div class = "question_generator_text">
+                        Question Generator
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class = "container_2">
+            <!-- to create box to change mode (dark/light) -->
+            <div class = "mode_box">
+                <button class = "mode_button"></button>
+                <div class = "mode_text">
+                    Light Mode
+                </div>
+            </div>
+
+            <!-- question generator heading -->
+            <div class = "heading">
+                Question Generator
+            </div>
+            <div class = "information">
+                <p> Upload your notes, and let Questly craft intelligent, topic-based questions — making studying smarter and easier! </p>
+            </div>
+            <!-- to create main_bar -->
+            <div class = "main_bar">
+                <!-- to create a space for pdf icon -->
+                <div class = "pdf_box">
+                    <img class = "pdf" src = "Questly_Icons/pdf.png">
+                </div>
+                <!-- to create add file box to add files -->
+                <label for="fileInput" class="add_file_box">
+                    <img class="plus" src="Questly_Icons/plus.png">
+                    <p class="add_file_text">Choose a File</p>
+                </label>
+                
+                <input type="file" id="fileInput" accept=".pdf,.txt" style="display: none;">
+
+                <!-- Questions Display Area -->
+                <div id="questionsContainer" class="questions-container hidden">
+                    <h2>Generated Questions</h2>
+                    <ul id="questionsList"></ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- load pdf.js library to extract text from pdf -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+</body>
+</html>
