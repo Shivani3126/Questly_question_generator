@@ -16,4 +16,4 @@ Questly is a web-based application that automatically generates questions from u
 - **GitHub Pages** — For deployment and hosting
   
 ## Live Demo
-Check out the application here:
+Check out the application here: https://shivani3126.github.io/Questly_question_generator/
